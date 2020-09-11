@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Edit post</title>
+</head>
+<body>
+    <nav>
+        <h1>menu</h1>  
+    </nav>
+    <div class="toggle">
+        <span>x</span>
+        <h2>Photo Bucket</h2>
+        <h2><a href="/index.html">Home</a></h2>
+        <h2><a href="/newpost.html">create post</a></h2>
+    </div>    
+
+    <div class="marge">
+        <h1 class="headline">Photo Bucket</h1>
+
+        <div id="loading"></div>
+        <button id="editBtn">Edit</button>
+        <div class="editFormContainer">
+            <!-- <form action="" method="post" id="editForm">
+                <input type="text" value="${post.data().title}" id="editTitle">
+                <textarea id="editContent" cols="30" rows="10">${post.data().content}</textarea>
+                <input type="file" id="editCover">
+                <input type="hidden" value="${post.data().fileref}" id="oldCover">
+                <input type="submit" id="edit" value="Update Post">
+            </form>
+            -->
+        </div>
+        
+        <div id="post"></div>
+
+        <button id="deleteBtn">Delete</button>
+    </div>
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>

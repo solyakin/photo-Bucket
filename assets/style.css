@@ -1,0 +1,146 @@
+body {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+body * {
+    transition: all 0.4s ease-in-out; 
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.form__area{
+    margin-top: -20px;
+    background-color: rgb(190, 184, 184);
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 60vh;
+    background-image: url(/annie-spratt-ihDcta7Kvqg-unsplash.jpg);
+    margin-top: -20px;
+    background-position: bottom;
+    background-size: 100%;
+    background-position: center;
+}
+.headline{
+    color: rgb(243, 225, 225);
+    text-align: center;
+    font-size: 120px;
+}
+nav h1{
+    font-weight: 200;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+}
+.toggle{
+    height: 100vh;
+    background: rgb(19, 18, 18);
+    width: 250px;
+    color: blanchedalmond;
+    position: absolute;
+    top: 0%;
+    display: none;
+}
+.toggle a{
+    color: white;
+}
+.toggle a:hover{
+    color: purple;
+}
+#btn{
+    padding: 1em 2em;
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#btn a{
+    color: rgb(3, 48, 3);
+}
+span{
+    position: absolute;
+    right: 0%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#root{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.marge{
+    margin-left: 40px;
+}
+.post{
+    width: 40%;
+    margin: 20px;
+}
+.post > div{
+    display: block;
+    height: 300px;
+    box-shadow: 5px 8px 18px #888;
+    background-position: top;
+}
+.post > div:hover{
+    background-position: 100%;
+}
+.post a{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#post img{
+    width: 80%;
+}
+#main{
+    text-align: center;
+}
+#main p {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+#title, #content, #editTitle, #editContent{
+    width: 500px;
+    padding: 2em;
+    margin: 1em 0;
+    border-radius: 10px;
+    border: none;
+}
+#editForm{
+    background-color: #eee;
+    width: 80%;
+    text-align: center;
+}
+#edit{
+    padding: 1em 2em;
+    margin-top: 1em;
+}
+#submitBtn, #editBtn, #deleteBtn{
+    padding: 1em 2em;
+    border: none;
+    margin-top: 2em;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+#submitBtn:hover, #editBtn:hover, #deleteBtn:hover{
+    background: blueviolet;
+    outline: none;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+#progressHandler{
+    display: none;
+}

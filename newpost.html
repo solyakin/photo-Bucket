@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Photo App</title>
+</head>
+<body>
+    <div class="form__area">
+        <nav>
+            <h1>&#9776 menu</h1>  
+        </nav>
+        <div class="toggle">
+            <span>x</span>
+            <h2>Photo Bucket</h2>
+            <h2>
+                <a href="/index.html">home</a>
+            </h2>    
+            
+        </div>    
+
+        <h1 class="center">Photo Bucket</h1>
+
+        <section id="main">
+            <p>Fill the form below to create a new post</p>
+
+            <form method="post" id="createForm">
+                <input id="title" type="text" placeholder="enter post title"></br>
+                <textarea id="content" placeholder="enter post"></textarea></br>
+                <input id="cover" type="file"></br>
+                <input id="submitBtn" type="submit" value="submit">
+            </form>
+
+            <div id="progressHandler">
+                <p>please wait while processing result</p>
+                <progress id="progressBar", value="", max="100"></progress>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

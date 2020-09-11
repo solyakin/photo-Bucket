@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Photo App</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>&#9776 menu</h1>  
+        </nav>
+        <div class="toggle">
+            <span>x</span>
+            <h2>Photo Bucket</h2>
+            <h2><a href="/newpost.html">new post</a></h2>
+        </div>    
+        <h1 class="headline">Photo Bucket</h1>
+        <button id="btn"><a href="/newpost.html">new post</a></button>
+    </header>
+
+    <div id="root"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
